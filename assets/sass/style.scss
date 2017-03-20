@@ -11,8 +11,10 @@ body {
 }
 
 .footer {
-  height: 50px;
+  margin-top: 50px;
+  height: 120px;
   width: 100%;
+  background-color: $theme-3;
 }
 
 $header-height: 100px;
@@ -95,15 +97,21 @@ $home-banner-height: 430px;
     background-color: $color-section-spanner;
     color: $color-section-spanner-text;
     font-family: 'Didact Gothic', sans-serif;
-    padding: 10px 10px 15px;
+    padding: 10px 0 15px;
     .center {
       padding: 0 23%;
       text-align: center;
       font-size: 1.3em;
+      &.disclaimer {
+        font-size: 0.7em;
+        margin-top: 3px;
+        margin-bottom: -5px;
+      }
     }
     .quote {
       font-family: 'Ubuntu', sans-serif;
       margin-top: 12px;
+      margin-bottom: 12px;
       &.right {
         text-align: right;
       }
@@ -113,6 +121,7 @@ $home-banner-height: 430px;
       padding: 0 25%;
       color: $color-section-quote-text;
       .wrapper {
+        text-align: right;
         max-width: 60%;
         display: inline-block;
         .wrapper-2 {
@@ -120,6 +129,7 @@ $home-banner-height: 430px;
           padding: 5px 15px 8px;
           border-radius: 5px;
           .attribution {
+            font-size: 0.9em;
           }
         }
       }
@@ -132,9 +142,16 @@ $home-banner-height: 430px;
       .triple-thing {
         display: inline-block;
         width: 33%;
+        vertical-align: top;
         .desc {
+          font-size: 1.15em;
+          width: 70%;
           text-align: center;
-          margin: 10px auto 0;
+          margin: -10px auto 0;
+          .desc-header {
+            font-size: 1.35em;
+            font-weight: bold;
+          }
         }
       }
     }
@@ -160,6 +177,18 @@ $home-banner-height: 430px;
       }
       & > .bullish {
         background: url("../gfx/icon-bullish-100.png") center center;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        width: 100px;
+        height: 100px;
+      }
+      & > .fine-print {
+        background: url("../gfx/icon-fine-print-100.png") center center;
         background-size: cover;
         position: absolute;
         top: 0;

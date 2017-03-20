@@ -7,8 +7,10 @@ body {
   background-color: #fdfdfd; }
 
 .footer {
-  height: 50px;
-  width: 100%; }
+  margin-top: 50px;
+  height: 120px;
+  width: 100%;
+  background-color: #45ADA8; }
 
 .header {
   width: 100%;
@@ -63,14 +65,19 @@ body {
     background-color: #E5FCC2;
     color: #594F4F;
     font-family: 'Didact Gothic', sans-serif;
-    padding: 10px 10px 15px; }
+    padding: 10px 0 15px; }
     .section .spanner .center {
       padding: 0 23%;
       text-align: center;
       font-size: 1.3em; }
+      .section .spanner .center.disclaimer {
+        font-size: 0.7em;
+        margin-top: 3px;
+        margin-bottom: -5px; }
     .section .spanner .quote {
       font-family: 'Ubuntu', sans-serif;
       margin-top: 12px;
+      margin-bottom: 12px;
       padding: 0 25%;
       color: #594F4F; }
       .section .spanner .quote.right {
@@ -78,12 +85,15 @@ body {
       .section .spanner .quote.left {
         text-align: left; }
       .section .spanner .quote .wrapper {
+        text-align: right;
         max-width: 60%;
         display: inline-block; }
         .section .spanner .quote .wrapper .wrapper-2 {
           background-color: #9DE0AD;
           padding: 5px 15px 8px;
           border-radius: 5px; }
+          .section .spanner .quote .wrapper .wrapper-2 .attribution {
+            font-size: 0.9em; }
     .section .spanner .triple-pic {
       display: block;
       text-align: center;
@@ -91,10 +101,16 @@ body {
       padding-top: 25px; }
       .section .spanner .triple-pic .triple-thing {
         display: inline-block;
-        width: 33%; }
+        width: 33%;
+        vertical-align: top; }
         .section .spanner .triple-pic .triple-thing .desc {
+          font-size: 1.15em;
+          width: 70%;
           text-align: center;
-          margin: 10px auto 0; }
+          margin: -10px auto 0; }
+          .section .spanner .triple-pic .triple-thing .desc .desc-header {
+            font-size: 1.35em;
+            font-weight: bold; }
     .section .spanner .icon {
       margin: 0 auto;
       width: 200px;
@@ -116,6 +132,17 @@ body {
         height: 100px; }
       .section .spanner .icon > .bullish {
         background: url("../gfx/icon-bullish-100.png") center center;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        width: 100px;
+        height: 100px; }
+      .section .spanner .icon > .fine-print {
+        background: url("../gfx/icon-fine-print-100.png") center center;
         background-size: cover;
         position: absolute;
         top: 0;
