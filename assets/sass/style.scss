@@ -1,0 +1,176 @@
+@import "colors";
+
+html, body, img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: $color-body-main;
+}
+
+.footer {
+  height: 50px;
+  width: 100%;
+}
+
+$header-height: 100px;
+
+.header {
+  width: 100%;
+  height: $header-height;
+  background-color: $color-header-main;
+}
+
+.logo {
+  margin-left: 25px;
+  padding: 10px 0;
+  height: $header-height - 20px;
+  display: block;
+}
+
+//.logo {
+//  margin-left: 25px;
+//  //border: 1px solid red;
+//  width: 500px;
+//  height: 100px;
+//  background-size: cover;
+//  display: inline-block;
+//  background: url("../gfx/logo.png") no-repeat center center;
+//  background-size: 100%;
+//}
+
+$home-banner-height: 430px;
+
+.home-banner {
+  border-top: 5px solid $color-header-border;
+  border-bottom: 5px solid $color-header-border;
+  padding: 5px 0;
+  background: url("../gfx/home-banner.png") no-repeat scroll center top transparent;
+  //background: url("../gfx/home-banner-orig.jpg") no-repeat scroll center top transparent;
+  background-size: 100%;
+  height: $home-banner-height;
+}
+
+.home-banner-text-wrapper {
+  text-align: center;
+  padding-top: $home-banner-height / 2 - 100px;
+  color: $color-text-light;
+  font-family: 'Roboto Condensed', sans-serif;
+
+  .inner {
+    font-size: 5em;
+    padding: 5px 50px;
+    vertical-align: middle;
+    border-radius: 5px;
+    border: 3px solid $color-header-text-border;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.60);
+  }
+}
+
+.section {
+  margin-top: 10px;
+
+  .title {
+    font-size: 2.5em;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    color: $color-section-text;
+
+    .wrapper {
+      padding: 0 8px 2px;
+      display: inline-block;
+      border-bottom: 3px solid $color-section-title-underline;
+    }
+  }
+
+  .spanner {
+    border-top: 3px solid $color-spanner-border;
+    border-bottom: 3px solid $color-spanner-border;
+    margin-top: 15px;
+    min-height: 20px;
+    width: 100%;
+    background-color: $color-section-spanner;
+    color: $color-section-spanner-text;
+    font-family: 'Didact Gothic', sans-serif;
+    padding: 10px 10px 15px;
+    .center {
+      padding: 0 23%;
+      text-align: center;
+      font-size: 1.3em;
+    }
+    .quote {
+      font-family: 'Ubuntu', sans-serif;
+      margin-top: 12px;
+      &.right {
+        text-align: right;
+      }
+      &.left {
+        text-align: left;
+      }
+      padding: 0 25%;
+      color: $color-section-quote-text;
+      .wrapper {
+        max-width: 60%;
+        display: inline-block;
+        .wrapper-2 {
+          background-color: $color-section-quote;
+          padding: 5px 15px 8px;
+          border-radius: 5px;
+          .attribution {
+          }
+        }
+      }
+    }
+    .triple-pic {
+      display: block;
+      text-align: center;
+      margin: 0 20%;
+      padding-top: 25px;
+      .triple-thing {
+        display: inline-block;
+        width: 33%;
+        .desc {
+          text-align: center;
+          margin: 10px auto 0;
+        }
+      }
+    }
+    .icon {
+      margin: 0 auto;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      position: relative;
+      background: $color-icon;
+      border: 3px solid $color-icon-border;
+      & > .line-chart {
+        background: url("../gfx/icon-line-chart-100.png") center center;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        width: 100px;
+        height: 100px;
+      }
+      & > .bullish {
+        background: url("../gfx/icon-bullish-100.png") center center;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+
+}
