@@ -22,9 +22,28 @@ body {
 
 .footer {
   margin-top: 50px;
-  height: 120px;
+  height: 80px;
   width: 100%;
   background-color: $theme-3;
+  position: relative;
+  .copy {
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: $theme-1;
+    font-family: 'Didact Gothic', sans-serif;
+    .attr {
+      @extend .unselectable;
+      display: inline-block;
+      position: absolute;
+      bottom: 1px;
+      padding-left: 10px;
+      color: $theme-3;
+      font-size: 0.80em;
+    }
+  }
 }
 
 $header-height: 80px;
@@ -33,6 +52,7 @@ $header-height: 80px;
   width: 100%;
   height: $header-height;
   background-color: $color-header-main;
+  position: relative;
 }
 
 .logo {
@@ -40,7 +60,27 @@ $header-height: 80px;
   margin-left: 25px;
   padding: 10px 0;
   height: $header-height - 20px;
-  display: block;
+  //display: block;
+  display: inline-block;
+}
+
+.nav-bar {
+  position: absolute;
+  right: 0;
+  height: $header-height;
+  font-size: 1.5em;
+  display: inline-block;
+  width: 35%;
+  //background-color: red;
+  $num-elements: 5;
+  .nav-element {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    display: inline-block;
+    line-height: $header-height;
+    width: 100% / ($num-elements + 0.3);
+    //border-right: 2px solid blue;
+  }
 }
 
 //.logo {
@@ -339,4 +379,3 @@ $home-banner-height: 430px;
   }
 
 }
-
