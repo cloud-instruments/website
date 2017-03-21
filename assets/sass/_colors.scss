@@ -5,27 +5,29 @@
 //$theme-5: #C5E0DC;
 
 // color scheme: http://www.colourlovers.com/palette/443995/i_demand_a_pancake
-$theme-1: #594F4F;
-$theme-2: #547980;
-$theme-3: #45ADA8;
-$theme-4: #9DE0AD;
-$theme-5: #E5FCC2;
+$theme-1: #54494b; // darkest
+$theme-2: #77cbb9; // second darkest
+$theme-3: #91c7b1; // middle highlight
+$theme-4: #feffcf; // soft highlight
+$theme-5: #f4faff; // light
 
 $color-body-main: #fdfdfd;
-$color-header-main: #fff8ee;
+$color-header-main: $theme-5;
 $color-header-border: $theme-1;
-$color-text-light: #fff8ee;
-$color-header-text-border: $theme-4;
+$color-header-text: $theme-5;
+$color-header-text-border: $theme-2;
 
-$color-section-text: $theme-2;
+$color-section-text: $theme-1;
 $color-section-title-underline: $theme-2;
 
 $color-section-spanner: $theme-5;
 $color-section-spanner-text: $theme-1;
-$color-section-quote-text: $theme-1;
-$color-section-quote: $theme-4;
 $color-spanner-border: $theme-4;
 
+$color-section-quote: $theme-1;
+$color-section-quote-text: $theme-4;
+$color-section-quote-attr-text: $theme-5;
+
 $color-icon: $theme-4;
-$color-icon-border: $theme-3;
+$color-icon-border: $theme-2;
 

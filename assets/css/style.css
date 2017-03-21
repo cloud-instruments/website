@@ -3,6 +3,15 @@ html, body, img {
   padding: 0;
   border: 0; }
 
+.unselectable, .logo, .home-banner {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default; }
+
 body {
   background-color: #fdfdfd; }
 
@@ -10,22 +19,22 @@ body {
   margin-top: 50px;
   height: 120px;
   width: 100%;
-  background-color: #45ADA8; }
+  background-color: #91c7b1; }
 
 .header {
   width: 100%;
-  height: 100px;
-  background-color: #fff8ee; }
+  height: 80px;
+  background-color: #f4faff; }
 
 .logo {
   margin-left: 25px;
   padding: 10px 0;
-  height: 80px;
+  height: 60px;
   display: block; }
 
 .home-banner {
-  border-top: 5px solid #594F4F;
-  border-bottom: 5px solid #594F4F;
+  border-top: 5px solid #54494b;
+  border-bottom: 5px solid #54494b;
   padding: 5px 0;
   background: url("../gfx/home-banner.png") no-repeat scroll center top transparent;
   background-size: 100%;
@@ -34,121 +43,224 @@ body {
 .home-banner-text-wrapper {
   text-align: center;
   padding-top: 115px;
-  color: #fff8ee;
+  color: #f4faff;
   font-family: 'Roboto Condensed', sans-serif; }
   .home-banner-text-wrapper .inner {
     font-size: 5em;
     padding: 5px 50px;
     vertical-align: middle;
     border-radius: 5px;
-    border: 3px solid #9DE0AD;
+    border: 3px solid #77cbb9;
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.6); }
 
-.section {
-  margin-top: 10px; }
-  .section .title {
-    font-size: 2.5em;
+.divider {
+  height: 30px;
+  width: 100%;
+  margin-top: 5px;
+  border-bottom: 30px solid; }
+  .divider.one {
+    background-color: #77cbb9;
+    border-color: #77cbb9; }
+
+.section .title {
+  font-size: 2.5em;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  color: #54494b;
+  margin: 5px 0 15px; }
+  .section .title .wrapper {
+    padding: 0 8px 2px;
+    display: inline-block;
+    border-bottom: 3px solid #77cbb9; }
+.section .spanner {
+  min-height: 20px;
+  width: 100%;
+  background-color: #f4faff;
+  color: #54494b;
+  font-family: 'Didact Gothic', sans-serif;
+  padding: 10px 0 15px; }
+  .section .spanner .center {
+    padding: 0 23%;
     text-align: center;
-    font-family: 'Quicksand', sans-serif;
-    color: #547980; }
-    .section .title .wrapper {
-      padding: 0 8px 2px;
-      display: inline-block;
-      border-bottom: 3px solid #547980; }
-  .section .spanner {
-    border-top: 3px solid #9DE0AD;
-    border-bottom: 3px solid #9DE0AD;
+    font-size: 1.3em; }
+    .section .spanner .center.disclaimer {
+      font-size: 0.7em;
+      margin-top: 3px;
+      margin-bottom: -5px; }
+  .section .spanner .quote {
+    font-family: 'Ubuntu', sans-serif;
     margin-top: 15px;
-    min-height: 20px;
-    width: 100%;
-    background-color: #E5FCC2;
-    color: #594F4F;
-    font-family: 'Didact Gothic', sans-serif;
-    padding: 10px 0 15px; }
-    .section .spanner .center {
-      padding: 0 23%;
-      text-align: center;
-      font-size: 1.3em; }
-      .section .spanner .center.disclaimer {
-        font-size: 0.7em;
-        margin-top: 3px;
-        margin-bottom: -5px; }
-    .section .spanner .quote {
-      font-family: 'Ubuntu', sans-serif;
-      margin-top: 12px;
-      margin-bottom: 12px;
-      padding: 0 25%;
-      color: #594F4F; }
-      .section .spanner .quote.right {
-        text-align: right; }
-      .section .spanner .quote.left {
-        text-align: left; }
-      .section .spanner .quote .wrapper {
-        text-align: right;
-        max-width: 60%;
-        display: inline-block; }
-        .section .spanner .quote .wrapper .wrapper-2 {
-          background-color: #9DE0AD;
-          padding: 5px 15px 8px;
-          border-radius: 5px; }
-          .section .spanner .quote .wrapper .wrapper-2 .attribution {
-            font-size: 0.9em; }
-    .section .spanner .triple-pic {
+    margin-bottom: 12px;
+    padding: 0 25%;
+    color: #feffcf; }
+    .section .spanner .quote.right {
+      text-align: right; }
+    .section .spanner .quote.left {
+      text-align: left; }
+    .section .spanner .quote .wrapper {
+      text-align: right;
+      max-width: 60%;
+      display: inline-block; }
+      .section .spanner .quote .wrapper .wrapper-2 {
+        background-color: #54494b;
+        padding: 5px 15px 8px;
+        border-radius: 5px; }
+        .section .spanner .quote .wrapper .wrapper-2 .attribution {
+          color: #f4faff;
+          font-size: 0.8em; }
+  .section .spanner .triple-pic {
+    display: block;
+    text-align: center;
+    margin: 0 20%;
+    padding-top: 25px; }
+    .section .spanner .triple-pic .triple-thing {
+      display: inline-block;
+      width: 33%;
+      vertical-align: top; }
+      .section .spanner .triple-pic .triple-thing .desc {
+        font-size: 1.15em;
+        width: 70%;
+        text-align: center;
+        margin: -10px auto 0; }
+        .section .spanner .triple-pic .triple-thing .desc .desc-header {
+          font-size: 1.35em;
+          font-weight: bold; }
+  .section .spanner .icon {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    background: #feffcf;
+    border: 3px solid #77cbb9; }
+    .section .spanner .icon > .line-chart {
+      background: url("../gfx/icon-line-chart-100.png") center center;
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      width: 100px;
+      height: 100px; }
+    .section .spanner .icon > .bullish {
+      background: url("../gfx/icon-bullish-100.png") center center;
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      width: 100px;
+      height: 100px; }
+    .section .spanner .icon > .fine-print {
+      background: url("../gfx/icon-fine-print-100.png") center center;
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      width: 100px;
+      height: 100px; }
+  .section .spanner .sales-wrapper {
+    margin: 20px 20% 10px; }
+    .section .spanner .sales-wrapper .sales-header {
       display: block;
-      text-align: center;
-      margin: 0 20%;
-      padding-top: 25px; }
-      .section .spanner .triple-pic .triple-thing {
+      text-align: center; }
+      .section .spanner .sales-wrapper .sales-header .sales-header-label {
+        vertical-align: top;
+        padding-bottom: 3px;
+        background-color: #feffcf;
+        border: 3px solid #91c7b1;
+        border-bottom: none;
+        font-size: 1.8em;
+        width: 27%;
+        margin: 0 2%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        display: inline-block; }
+    .section .spanner .sales-wrapper .sales-info {
+      display: block;
+      text-align: center; }
+      .section .spanner .sales-wrapper .sales-info .sales-info-label {
+        padding-top: 5px;
+        position: relative;
+        height: 330px;
+        vertical-align: top;
+        font-size: 1.2em;
+        border: 3px solid #91c7b1;
         display: inline-block;
-        width: 33%;
-        vertical-align: top; }
-        .section .spanner .triple-pic .triple-thing .desc {
-          font-size: 1.15em;
-          width: 70%;
-          text-align: center;
-          margin: -10px auto 0; }
-          .section .spanner .triple-pic .triple-thing .desc .desc-header {
-            font-size: 1.35em;
-            font-weight: bold; }
-    .section .spanner .icon {
-      margin: 0 auto;
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      position: relative;
-      background: #9DE0AD;
-      border: 3px solid #45ADA8; }
-      .section .spanner .icon > .line-chart {
-        background: url("../gfx/icon-line-chart-100.png") center center;
-        background-size: cover;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        margin: auto;
-        width: 100px;
-        height: 100px; }
-      .section .spanner .icon > .bullish {
-        background: url("../gfx/icon-bullish-100.png") center center;
-        background-size: cover;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        margin: auto;
-        width: 100px;
-        height: 100px; }
-      .section .spanner .icon > .fine-print {
-        background: url("../gfx/icon-fine-print-100.png") center center;
-        background-size: cover;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        margin: auto;
-        width: 100px;
-        height: 100px; }
+        width: 27%;
+        margin: 0 2%; }
+        .section .spanner .sales-wrapper .sales-info .sales-info-label .academia {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          padding: 3px 0;
+          font-size: 0.85em;
+          color: #f4faff;
+          background-color: #54494b;
+          border-bottom: 1px solid #77cbb9; }
+        .section .spanner .sales-wrapper .sales-info .sales-info-label .li {
+          text-align: left;
+          padding: 0 10px;
+          vertical-align: middle; }
+          .section .spanner .sales-wrapper .sales-info .sales-info-label .li:before {
+            color: #77cbb9;
+            padding-bottom: 3px;
+            padding-right: 8px;
+            font-family: 'Material Icons', serif;
+            font-weight: normal;
+            font-style: normal;
+            font-size: inherit;
+            display: inline-block;
+            vertical-align: middle;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+            /* Support for all WebKit browsers. */
+            -webkit-font-smoothing: antialiased;
+            /* Support for Safari and Chrome. */
+            text-rendering: optimizeLegibility;
+            /* Support for Firefox. */
+            -moz-osx-font-smoothing: grayscale;
+            /* Support for IE. */
+            font-feature-settings: 'liga';
+            content: "done"; }
+    .section .spanner .sales-wrapper .sales-cta {
+      display: block;
+      text-align: center; }
+      .section .spanner .sales-wrapper .sales-cta .sales-cta-label {
+        height: 60px;
+        vertical-align: top;
+        line-height: 60px;
+        padding: 3px 0;
+        border: 3px solid #91c7b1;
+        border-top: none;
+        display: inline-block;
+        width: 27%;
+        font-weight: bold;
+        background-color: #77cbb9;
+        color: #f4faff;
+        font-size: 1.5em;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin: 0 2%; }
+        .section .spanner .sales-wrapper .sales-cta .sales-cta-label.academia {
+          line-height: 30px; }
+          .section .spanner .sales-wrapper .sales-cta .sales-cta-label.academia .top {
+            margin-top: -2px;
+            font-size: 1.07em; }
+          .section .spanner .sales-wrapper .sales-cta .sales-cta-label.academia .bot {
+            margin-top: -2px;
+            line-height: 15px;
+            font-weight: normal;
+            font-size: 0.6em; }
